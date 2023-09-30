@@ -5,6 +5,7 @@ import { LuGraduationCap } from "react-icons/lu";
 import assemblerParserImg from "@/public/assembler-parser.png";
 import carRentalImg from "@/public/car-rental.png";
 import couponSystemImg from "@/public/coupon-system.png";
+import portfolioProjectImg from "@/public/portfolio-project.png"
 
 export const links = [
   {
@@ -35,6 +36,7 @@ export const links = [
 
 export const experiencesData = [
   {
+    id: "e1",
     title: " System Administrator and Technical Assistance",
     location: "Jerusalem, ISR",
     description:
@@ -43,6 +45,7 @@ export const experiencesData = [
     date: "2015 - 2021 ",
   },
   {
+    id: "e2",
     title: "Scrum Master and a Backend Java Developer",
     location: "Tel-Aviv, ISR",
     description:
@@ -54,6 +57,7 @@ export const experiencesData = [
 
 export const projectsData = [
   {
+    id: "p1",
     title: "Assembler Parser",
     description:
       "A C program that reads and converts assembly to octal and binary files.",
@@ -61,18 +65,28 @@ export const projectsData = [
     imageUrl: assemblerParserImg,
   },
   {
+    id: "p2",
     title: "Coupon System",
     description:
       "A system which operates as a global data store for purchasing and managing shopping coupons. Server side written with Spring Boot Java, client side made with Angular.",
     tags: ["Spring Boot", "Java", "Angular", "Angular", "SQL"],
-    imageUrl: assemblerParserImg,
+    imageUrl: couponSystemImg,
   },
   {
+    id: "p3",
     title: "Car Rental",
     description:
       "A web app features a car showcase that presents detailed car information along with accompanying pictures. It enables modern search capabilities with autocomplete, a modern user-friendly interface, utilizing server-side rendering, type safety, and accessible UI components.",
     tags: ["NextJs", "React", "Tailwind CSS", "HeadlessUi", "TypeScript"],
     imageUrl: carRentalImg,
+  },
+  {
+    id: "p4",
+    title: "Profolio",
+    description:
+      "A personal portfolio site that is essentially a showcase of my skills and projects as a full-stack developer",
+    tags: ["NextJs", "React", "Tailwind CSS", "Framer Motion", "TypeScript", "Email"],
+    imageUrl: portfolioProjectImg,
   },
 ] as const;
 
