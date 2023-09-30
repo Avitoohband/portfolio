@@ -1,0 +1,64 @@
+"use client"
+
+import SectionHeading from "./SectionHeading";
+import {motion} from "framer-motion"
+
+export default function About() {
+  return ( 
+    <motion.section className="mb-28 max-w-[45rem] text-center leading-8 sm:mb-40"
+    initial={{ opacity: 0, y: 100}}
+    animate={{ opacity: 1, y: 0}}
+    transition={{
+        delay:0.175
+    }}>
+      <SectionHeading>About Me</SectionHeading>
+      <p className="mb-3">
+        <span className="font-medium"></span>
+        Since I was a boy, I have had an eagerness for all things related to
+        computers. I worked as a{" "}
+        <span className="font-medium">system administrator</span> and provided{" "}
+        <span className="font-medium">technical assistance</span> for
+        approximately <span className="font-medium">six years.</span> During
+        this time, I pursued studies at{" "}
+        <span className="font-medium">Open University</span> in both{" "}
+        <span className="font-medium">Psychology and Computer Science. </span>
+        Additionally, I engaged in practical courses such as{" "}
+        <span className="font-medium">Fullstack development</span> using{" "}
+        <span className="font-medium">Java Spring Boot and Angular,</span> and I
+        completed various online courses related to{" "}
+        <span className="font-medium">Web Development.</span> The moment I
+        encountered code for the first time, I immediately{" "}
+        <span className="underline">developed a passion</span> for
+        programming. I'm driven by{" "}
+        <span className="font-medium">a passion for problem-solving</span> and I'm
+        always{" "}
+        <span className="font-medium">eager to take on the next challenge.</span>{" "}
+        I value <span className="font-medium">teamwork,</span>{" "}
+        <span className="font-medium">creativity,</span> and{" "}
+        <span className="font-medium">continuous learning. </span> 
+        My core stack includes{" "}
+        <span className="font-medium">
+          Spring Boot, React, Next.js, Node.js, TypeScrip, and MongoDB.
+        </span>{" "}
+        I am always{" "}
+        <span className="font-medium">looking to learn new technologies</span>{" "}
+        and <span className="font-medium">looking for new challenges</span> as a
+        full-stack developer.
+        My goto quote:{" "}
+        <span className="italic">
+          {" "}
+          "Coding Isn’t About What You Know, It’s About What You Can Figure Out"
+        </span>{" "}
+      </p>
+
+      <p>
+        <span className="italic">When I'm not coding,</span> I enjoy playing
+        video games, watching anime, exercising, and dancing Bachata.{" "}
+        <span className="font-medium">
+          I also find pleasure in learning new skills,
+        </span>{" "}
+        such as playing the piano and studying foreign languages.
+      </p>
+    </motion.section>
+  );
+}
