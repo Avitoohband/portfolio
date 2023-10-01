@@ -1,16 +1,23 @@
-"use client"
+"use client";
 
+import { useSectionInView } from "@/lib/hooks";
+import { motion } from "framer-motion";
 import SectionHeading from "./SectionHeading";
-import {motion} from "framer-motion"
 
 export default function About() {
-  return ( 
-    <motion.section className="mb-28 max-w-[45rem] text-center leading-8 sm:mb-40"
-    initial={{ opacity: 0, y: 100}}
-    animate={{ opacity: 1, y: 0}}
-    transition={{
-        delay:0.175
-    }}>
+  const { ref } = useSectionInView("About", 0.75);
+
+  return (
+    <motion.section
+      ref={ref}
+      id="about"
+      className="scroll-mt-28 mb-28 max-w-[45rem] text-center leading-8 sm:mb-40"
+      initial={{ opacity: 0, y: 100 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{
+        delay: 0.175,
+      }}
+    >
       <SectionHeading>About Me</SectionHeading>
       <p className="mb-3">
         <span className="font-medium"></span>
@@ -28,14 +35,16 @@ export default function About() {
         completed various online courses related to{" "}
         <span className="font-medium">Web Development.</span> The moment I
         encountered code for the first time, I immediately{" "}
-        <span className="underline">developed a passion</span> for
-        programming. I'm driven by{" "}
-        <span className="font-medium">a passion for problem-solving</span> and I'm
-        always{" "}
-        <span className="font-medium">eager to take on the next challenge.</span>{" "}
+        <span className="underline">developed a passion</span> for programming.
+        I'm driven by{" "}
+        <span className="font-medium">a passion for problem-solving</span> and
+        I'm always{" "}
+        <span className="font-medium">
+          eager to take on the next challenge.
+        </span>{" "}
         I value <span className="font-medium">teamwork,</span>{" "}
         <span className="font-medium">creativity,</span> and{" "}
-        <span className="font-medium">continuous learning. </span> 
+        <span className="font-medium">continuous learning. </span>
         My core stack includes{" "}
         <span className="font-medium">
           Spring Boot, React, Next.js, Node.js, TypeScrip, and MongoDB.
@@ -43,8 +52,7 @@ export default function About() {
         I am always{" "}
         <span className="font-medium">looking to learn new technologies</span>{" "}
         and <span className="font-medium">looking for new challenges</span> as a
-        full-stack developer.
-        My goto quote:{" "}
+        full-stack developer. My goto quote:{" "}
         <span className="italic">
           {" "}
           "Coding Isn’t About What You Know, It’s About What You Can Figure Out"

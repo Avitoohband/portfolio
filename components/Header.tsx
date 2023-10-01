@@ -1,10 +1,15 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { useActiveSectionContext } from "@/context/active-section-context";
 import { links } from "@/lib/data";
+import clsx from "clsx";
+import { motion } from "framer-motion";
 import Link from "next/link";
 
 export default function Header() {
+  const { activeSection, setActiveSection, setTimeOfLastClick } =
+    useActiveSectionContext();
+
   return (
     <header className="z-[999] relative">
       <motion.div
@@ -16,16 +21,37 @@ export default function Header() {
         <ul className="flex w-[22rem] flex-wrap items-center justify-center gap-y-1 text-[0.9rem] font-medium text-gray-500 sm:w-[initial] sm:flex-nowrap sm:gap-5">
           {links.map((link) => (
             <motion.li
-              className="h-3/4 flex items-center justify-center"
+              className="relative h-3/4 flex items-center justify-center"
               key={link.hash}
               initial={{ y: -100, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
             >
               <Link
-                className="flex w-full items-center justify-center px-3 py-3 hover:text-gray-950 transition"
+                onClick={() => {
+                  setActiveSection(link.name);
+                  setTimeOfLastClick(Date.now());
+                }}
+                className={clsx(
+                  "flex w-full items-center justify-center px-3 py-3 hover:text-gray-950 transition",
+                  {
+                    "text-gray-950": activeSection === link.name,
+                  }
+                )}
                 href={link.hash}
               >
                 {link.name}
+
+                {activeSection === link.name && (
+                  <motion.span
+                    layoutId="activeSection"
+                    transition={{
+                      type: "spring",
+                      stiffness: 380,
+                      damping: 30,
+                    }}
+                    className="absolute bg-gray-100 inset-0 rounded-full -z-10"
+                  ></motion.span>
+                )}
               </Link>
             </motion.li>
           ))}
