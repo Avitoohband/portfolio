@@ -41,17 +41,44 @@ export const experiencesData = [
     location: "Jerusalem, ISR",
     description:
       "I ensured seamless IT operations, supported classes, and managed personnel while overseeing international exams at the Pearson VUE Center.",
-    icon: React.createElement(LuGraduationCap),
+    icon: React.createElement(CgWorkAlt),
     date: "2015 - 2021 ",
   },
   {
     id: "e2",
+    title: "B.A Pshychology and Computer Science",
+    location: "Open University, ISR",
+    description:
+      "Completed courses: Calculus, Linear Algebra, Data Structures & Algorithms, Operating Systems, Computer Organization Principles, Database Management Systems, Object-Oriented Programming using Java, Systems Programming Laboratory using C, Advanced Programming using Java, and various Psychology courses.",
+    icon: React.createElement(LuGraduationCap),
+    date: "2019 - 2022",
+  },
+  {
+    id: "e3",
+    title: "Full-Stack Java Spring Boot & Angular",
+    location: "John Bryce, ISR",
+    description:
+      "Full-Stack course combines Java Spring Boot and Angular. Throughout the course we built end-to-end web applications, complete with database integration. Server-side development with Spring Boot and front-end development with Angular,",
+    icon: React.createElement(LuGraduationCap),
+    date: "2021",
+  },
+  {
+    id: "e4",
     title: "Scrum Master and a Backend Java Developer",
     location: "Tel-Aviv, ISR",
     description:
       "I'm a Scrum Master at Bank Hapoalim, leading Agile projects with expertise in CI/CD, Microservices, Java development, ETL processes, error analysis, and Java testing. I've also collaborated on AWS projects during a Hackathon.",
     icon: React.createElement(CgWorkAlt),
     date: "2021 - present",
+  },
+  {
+    id: "e5",
+    title: "Web Development Courses",
+    location: "Online",
+    description:
+      "A variety of Web Development courses including technologies such as Node.js, React, Next.js, HTML, CSS, JavaScript, TypeScript, Express.js and MongoDB",
+    icon: React.createElement(FaReact),
+    date: "2023",
   },
 ] as const;
 
