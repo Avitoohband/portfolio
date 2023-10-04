@@ -5,7 +5,7 @@ import { LuGraduationCap } from "react-icons/lu";
 import assemblerParserImg from "@/public/assembler-parser.png";
 import carRentalImg from "@/public/car-rental.png";
 import couponSystemImg from "@/public/coupon-system.png";
-import portfolioProjectImg from "@/public/portfolio-project.png"
+import portfolioProjectImg from "@/public/portfolio-project.png";
 
 export const links = [
   {
@@ -96,7 +96,7 @@ export const projectsData = [
     title: "Coupon System",
     description:
       "A system which operates as a global data store for purchasing and managing shopping coupons. Server side written with Spring Boot Java, client side made with Angular.",
-    tags: ["Spring Boot", "Java", "Angular", "Angular", "SQL"],
+    tags: ["Spring Boot", "Java", "Angular", "TypeScript", "SQL"],
     imageUrl: couponSystemImg,
   },
   {
@@ -112,7 +112,15 @@ export const projectsData = [
     title: "Profolio",
     description:
       "A personal portfolio site that is essentially a showcase of my skills and projects as a full-stack developer",
-    tags: ["NextJs", "React", "Tailwind CSS", "Framer Motion", "TypeScript", "React Email", "Resend"],
+    tags: [
+      "NextJs",
+      "React",
+      "Tailwind CSS",
+      "Framer Motion",
+      "TypeScript",
+      "React Email",
+      "Resend",
+    ],
     imageUrl: portfolioProjectImg,
   },
 ] as const;
