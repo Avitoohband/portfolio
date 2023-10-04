@@ -40,7 +40,7 @@ export const experiencesData = [
     title: " System Administrator and Technical Assistance",
     location: "Jerusalem, ISR",
     description:
-      "I ensured seamless IT operations, supported classes, and managed personnel while overseeing international exams at the Pearson VUE Center.",
+      "I ensured seamless IT operations, supported classes, and managed international exams while collaborating with Pearson VUE Center.",
     icon: React.createElement(CgWorkAlt),
     date: "2015 - 2021 ",
   },
