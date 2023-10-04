@@ -47,7 +47,7 @@ export default function Project({
         </div>
 
         <Image
-          className="hidden sm:block absolute top-8 -right-40 w-[32.25rem] rounded-lg shadow-2xl h-[65%] group-even:right-[initial] group-even:-left-40
+          className="hidden sm:block absolute top-8 -right-40 w-[32.25rem] h-[65%] rounded-lg shadow-2xl group-even:right-[initial] group-even:-left-40
         group-hover:scale-[1.04]
         group-hover:-translate-x-3
         group-hover:-translate-y-3
