@@ -21,21 +21,23 @@ export default function About() {
       <SectionHeading>About Me</SectionHeading>
       <p className="mb-3">
         <span className="font-medium"></span>
-        Since I was a boy, I have had an eagerness for all things related to
-        computers. I worked as a{" "}
-        <span className="font-medium">system administrator</span> and provided{" "}
-        <span className="font-medium">technical assistance</span> for
+        Ever since I was young, I have been enthusiastic about everything
+        related to computers. I worked as a{" "}
+        <span className="font-medium">System Administrator</span> and provided{" "}
+        <span className="font-medium">Technical Assistance</span> for
         approximately <span className="font-medium">six years.</span> During
         this time, I pursued studies at{" "}
         <span className="font-medium">Open University</span> in both{" "}
         <span className="font-medium">Psychology and Computer Science. </span>
         Additionally, I engaged in practical courses such as{" "}
         <span className="font-medium">Fullstack development</span> using{" "}
-        <span className="font-medium">Java Sprׁׁing Boot and Angular,</span> and
-        I completed various online courses related to{" "}
+        <span className="font-medium">
+          Spring Boot with Java and Angular with TypeScript,
+        </span>{" "}
+        and I completed various online courses related to{" "}
         <span className="font-medium">Web Development.</span> The moment I
-        encountered code for the first time, I immediately{" "}
-        <span className="underline">developed a passion</span> for programming.
+        encountered code for the first time, I quickly {" "}
+        <span className="underline">cultivated a keen interest</span> in programming.
         I'm driven by{" "}
         <span className="font-medium">a passion for problem-solving</span> and
         I'm always{" "}
@@ -61,7 +63,7 @@ export default function About() {
 
       <p>
         <span className="italic">When I'm not coding,</span> I enjoy playing
-        video games, watching anime, exercising, and dancing Bachata.{" "}
+        video games, watching anime, exercising and dancing Bachata.{" "}
         <span className="font-medium">
           I also find pleasure in learning new skills,
         </span>{" "}
