@@ -31,8 +31,8 @@ export default function About() {
         <span className="font-medium">Psychology and Computer Science. </span>
         Additionally, I engaged in practical courses such as{" "}
         <span className="font-medium">Fullstack development</span> using{" "}
-        <span className="font-medium">Java Spring Boot and Angular,</span> and I
-        completed various online courses related to{" "}
+        <span className="font-medium">Java Sprׁׁing Boot and Angular,</span> and
+        I completed various online courses related to{" "}
         <span className="font-medium">Web Development.</span> The moment I
         encountered code for the first time, I immediately{" "}
         <span className="underline">developed a passion</span> for programming.
@@ -47,7 +47,7 @@ export default function About() {
         <span className="font-medium">continuous learning. </span>
         My core stack includes{" "}
         <span className="font-medium">
-          Spring Boot, React, Next.js, Node.js, TypeScrip, and MongoDB.
+          Spring Boot, React, Next.js, Node.js, TypeScript, and MongoDB.
         </span>{" "}
         I am always{" "}
         <span className="font-medium">looking to learn new technologies</span>{" "}

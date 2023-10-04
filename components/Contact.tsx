@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 import SectionHeading from "./SectionHeading";
 import toast from "react-hot-toast"
 
-export default function Conteact() {
+export default function Contact() {
   const { ref } = useSectionInView("Contact", 0.75);
 
   return (
@@ -28,7 +28,7 @@ export default function Conteact() {
     >
       <SectionHeading>Contact Me</SectionHeading>
 
-      <p className="text-gray-700 -mt-6">
+      <p className="text-gray-700 -mt-6 dark:text-white/80">
         Please contact me directly at{" "}
         <a className="underline" href="mailto:Avitoohband@gmail.com">
           Avitoohband@gmail.com
@@ -37,7 +37,7 @@ export default function Conteact() {
       </p>
 
       <form
-        className="mt-10 flex flex-col "
+        className="mt-10 flex flex-col dark:text-black"
         action={async (formData) => {
           const { data, error } = await sendEmail(formData);       
           if (error) {
@@ -52,12 +52,12 @@ export default function Conteact() {
           type="email"
           required
           maxLength={500}
-          className="h-14 px-4 rounded-lg borderBlack"
+          className="h-14 px-4 rounded-lg borderBlack dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
           placeholder="Your Email"
         />
         <textarea
           name="message"
-          className="h-52 my-3 borderBlack p-4"
+          className="h-52 my-3 borderBlack p-4 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
           placeholder="Your Message"
           required
           maxLength={5000}

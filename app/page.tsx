@@ -4,7 +4,7 @@ import Projects from "@/components/Projects";
 import SectionDivider from "@/components/SectionDivider";
 import Skills from "@/components/Skills";
 import Experience from "@/components/Experience";
-import Conteact from "@/components/Conteact";
+import Contact from "@/components/Contact";
 
 export default function Home() {
   return (
@@ -15,7 +15,7 @@ export default function Home() {
       <Projects />
       <Skills />
       <Experience />
-      <Conteact />
+      <Contact />
     </main>
   )
 }

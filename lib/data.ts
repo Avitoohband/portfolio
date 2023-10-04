@@ -112,7 +112,7 @@ export const projectsData = [
     title: "Profolio",
     description:
       "A personal portfolio site that is essentially a showcase of my skills and projects as a full-stack developer",
-    tags: ["NextJs", "React", "Tailwind CSS", "Framer Motion", "TypeScript", "Email"],
+    tags: ["NextJs", "React", "Tailwind CSS", "Framer Motion", "TypeScript", "React Email", "Resend"],
     imageUrl: portfolioProjectImg,
   },
 ] as const;
@@ -136,6 +136,7 @@ export const skillsData = [
   "Tailwind CSS",
   "Headless UI",
   "Redux",
+  "Framer Motion",
   "Angular",
   "JUnit",
   "Mockito",
