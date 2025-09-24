@@ -20,45 +20,41 @@ export default function About() {
     >
       <SectionHeading>About Me</SectionHeading>
       <p className="mb-3">
-        <span className="font-medium"></span>
-        Ever since I was young, I have been enthusiastic about everything
-        related to computers. I worked as a{" "}
-        <span className="font-medium">System Administrator</span> and provided{" "}
-        <span className="font-medium">Technical Assistance</span> for
-        approximately <span className="font-medium">six years.</span> During
-        this time, I pursued studies at{" "}
-        <span className="font-medium">Open University</span> in both{" "}
-        <span className="font-medium">Psychology and Computer Science. </span>
-        Additionally, I engaged in practical courses such as{" "}
-        <span className="font-medium">Fullstack development</span> using{" "}
+        I'm a <span className="font-medium">Fullstack & Cloud Engineer</span> with{" "}
+        <span className="font-medium">5+ years of experience</span> in software development, 
+        specializing in <span className="font-medium">Next.js, Spring Boot, and Python</span>. 
+        Currently, I work as a <span className="font-medium">Backend & Infrastructure Engineer</span> at{" "}
+        <span className="font-medium">Bank Discount</span>, where I build{" "}
+        <span className="font-medium">Helm configurations</span> and deploy{" "}
+        <span className="font-medium">microservices on GKE</span> including Redis, Postgres, 
+        and business-critical services. I've led the{" "}
+        <span className="font-medium">migration of on-prem systems to GCP</span> and 
+        contributed to cloud-native architecture decisions.
+      </p>
+
+      <p className="mb-3">
+        Previously, I worked as a <span className="font-medium">Software Backend Developer</span> at{" "}
+        <span className="font-medium">Bank Hapoalim</span> for 3 years, specializing in{" "}
+        <span className="font-medium">Microservices environments</span> and creating{" "}
+        <span className="font-medium">RESTful APIs</span>. I implemented{" "}
+        <span className="font-medium">CI/CD pipelines</span> with Jenkins, OpenShift, 
+        and worked extensively with <span className="font-medium">multithreaded environments</span> using 
+        CompletableFutures and Java Generics. I also collaborated with AWS mentors on implementing 
+        innovative remote control technology.
+      </p>
+
+      <p className="mb-3">
+        I have strong expertise in <span className="font-medium">cloud-native architectures</span> 
+        (GCP, AWS, Kubernetes, Docker) and <span className="font-medium">scalable microservices</span>. 
+        Recently, I've been diving deep into <span className="font-medium">Generative AI and LLMs</span>, 
+        with hands-on experience in <span className="font-medium">AI Agent development</span>, 
+        integrating frameworks like <span className="font-medium">LangChain, HuggingFace, OpenAI API, and FastAPI</span> 
+        to build intelligent services. My core stack includes{" "}
         <span className="font-medium">
-          Spring Boot with Java and Angular with TypeScript,
+          Spring Boot, Next.js, React, Python, GCP, Kubernetes, and PostgreSQL.
         </span>{" "}
-        and I completed various online courses related to{" "}
-        <span className="font-medium">Web Development.</span> The moment I
-        encountered code for the first time, I quickly {" "}
-        <span className="underline">cultivated a keen interest</span> in programming.
-        I'm driven by{" "}
-        <span className="font-medium">a passion for problem-solving</span> and
-        I'm always{" "}
-        <span className="font-medium">
-          eager to take on the next challenge.
-        </span>{" "}
-        I value <span className="font-medium">teamwork,</span>{" "}
-        <span className="font-medium">creativity,</span> and{" "}
-        <span className="font-medium">continuous learning. </span>
-        My core stack includes{" "}
-        <span className="font-medium">
-          Spring Boot, React, Next.js, Node.js, TypeScript, and MongoDB.
-        </span>{" "}
-        I am always{" "}
-        <span className="font-medium">looking to learn new technologies</span>{" "}
-        and <span className="font-medium">looking for new challenges</span> as a
-        full-stack developer. My goto quote:{" "}
-        <span className="italic">
-          {" "}
-          "Coding Isn’t About What You Know, It’s About What You Can Figure Out"
-        </span>{" "}
+        I'm passionate about <span className="font-medium">continuous learning</span> and always{" "}
+        <span className="font-medium">eager to tackle new challenges</span> in the evolving tech landscape.
       </p>
 
       <p>

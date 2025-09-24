@@ -62,9 +62,11 @@ export default function Intro() {
         animate={{ opacity: 1, y: 1 }}
       >
         <span className="font-bold">Hello, I'm Avi.</span> I'm a{" "}
-        <span className="font-bold">full-stack developer</span> with{" "}
-        <span className="font-bold">2 years</span> of experience. My main focus
-        is <span className="underline">React(Next.js).</span>
+        <span className="font-bold">Fullstack & Cloud Engineer</span> with{" "}
+        <span className="font-bold">5+ years</span> of experience specializing in{" "}
+        <span className="underline">Next.js, Spring Boot, and Python</span>. I have strong expertise in{" "}
+        <span className="font-bold">cloud-native architectures</span> (GCP, AWS, Kubernetes) and{" "}
+        <span className="font-bold">Generative AI</span> with LLMs and AI Agents.
       </motion.h1>
 
       <motion.div
@@ -87,11 +89,12 @@ export default function Intro() {
           <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
         </Link>
         <a
-          href="/CV.docx"
-          download
+          href="https://docs.google.com/document/d/1tCHnJvd2t_wvr-vRpGGGfip_JzxnhQzZ/edit?usp=sharing&ouid=104445693280903602450&rtpof=true&sd=true"
+          target="_blank"
+          rel="noopener noreferrer"
           className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none hoverButton transition cursor-pointer borderBlack dark:bg-white/10"
         >
-          Download CV
+          View CV
           <HiDownload className=" opacity-60 group-hover:translate-y-1" />
         </a>
         <a

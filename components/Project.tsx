@@ -4,6 +4,7 @@ import React, { useRef } from "react";
 import { useScroll, motion, useTransform } from "framer-motion";
 import Image from "next/image";
 import { projectsData } from "@/lib/data";
+import { FaGithubSquare, FaExternalLinkAlt } from "react-icons/fa";
 
 type ProjectProps = (typeof projectsData)[number];
 
@@ -12,6 +13,9 @@ export default function Project({
   description,
   tags,
   imageUrl,
+  githubUrl,
+  githubClientUrl,
+  deploymentUrl,
 }: ProjectProps) {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
@@ -46,6 +50,54 @@ export default function Project({
               </li>
             ))}
           </ul>
+          
+          {/* Links Section */}
+          <div className="flex flex-wrap gap-3 mt-4 items-center">
+            {githubUrl && (
+              <div className="flex items-center gap-1">
+                <a
+                  href={githubUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-700 hover:text-gray-950 dark:text-white/70 dark:hover:text-white transition"
+                  title="View GitHub Repository"
+                >
+                  <FaGithubSquare size={24} />
+                </a>
+                {githubClientUrl && (
+                  <span className="text-xs text-gray-600 dark:text-white/50 ml-1">Server</span>
+                )}
+              </div>
+            )}
+            {githubClientUrl && (
+              <div className="flex items-center gap-1">
+                <a
+                  href={githubClientUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-700 hover:text-gray-950 dark:text-white/70 dark:hover:text-white transition"
+                  title="View Client GitHub Repository"
+                >
+                  <FaGithubSquare size={24} />
+                </a>
+                <span className="text-xs text-gray-600 dark:text-white/50 ml-1">Client</span>
+              </div>
+            )}
+            {deploymentUrl && (
+              <div className="flex items-center gap-1">
+                <a
+                  href={deploymentUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-700 hover:text-gray-950 dark:text-white/70 dark:hover:text-white transition"
+                  title="View Live Demo"
+                >
+                  <FaExternalLinkAlt size={20} />
+                </a>
+                <span className="text-xs text-gray-600 dark:text-white/50 ml-1">Live Demo</span>
+              </div>
+            )}
+          </div>
         </div>
 
         <Image
