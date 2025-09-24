@@ -6,7 +6,16 @@ import Image from "next/image";
 import { projectsData } from "@/lib/data";
 import { FaGithubSquare, FaExternalLinkAlt } from "react-icons/fa";
 
-type ProjectProps = (typeof projectsData)[number];
+type ProjectProps = {
+  id: string;
+  title: string;
+  description: string;
+  tags: readonly string[];
+  imageUrl: any;
+  githubUrl?: string;
+  githubClientUrl?: string;
+  deploymentUrl?: string;
+};
 
 export default function Project({
   title,
