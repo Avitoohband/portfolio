@@ -43,8 +43,8 @@ export default function Project({
         opacity: opacityProgress,
       }}
     >
-      <section className=" bg-gray-100 max-w-[48rem] border border-black/5 rounded-lg sm:group-even:pl-8 overflow-hidden sm:pr-8 relative sm:h-[25rem] hover:bg-gray-200 transition dark:bg-white/10 dark:hover:bg-white/20 dark:text-white">
-        <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full sm:group-even:ml-[50%]">
+      <section className=" bg-gray-100 max-w-[48rem] border border-black/5 rounded-lg sm:group-even:pl-8 overflow-hidden sm:pr-8 relative sm:h-[28rem] hover:bg-gray-200 transition dark:bg-white/10 dark:hover:bg-white/20 dark:text-white">
+        <div className="pt-4 pb-4 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full sm:group-even:ml-[50%]">
           <h3 className="text-2xl font-semibold">{title}</h3>
           <p className="mt-22 leading-relaxed text-gray-700 dark:text-white/70">
             {description}
@@ -61,49 +61,49 @@ export default function Project({
           </ul>
           
           {/* Links Section */}
-          <div className="flex flex-wrap gap-3 mt-4 items-center">
+          <div className="flex justify-center gap-3 mt-4 mb-2">
             {githubUrl && (
-              <div className="flex items-center gap-1">
+              <div className="flex flex-col items-center gap-1">
                 <a
                   href={githubUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-gray-700 hover:text-gray-950 dark:text-white/70 dark:hover:text-white transition"
+                  className="text-gray-700 hover:text-gray-950 dark:text-white/70 dark:hover:text-white transition-all hover:scale-110"
                   title="View GitHub Repository"
                 >
-                  <FaGithubSquare size={24} />
+                  <FaGithubSquare size={34} />
                 </a>
                 {githubClientUrl && (
-                  <span className="text-xs text-gray-600 dark:text-white/50 ml-1">Server</span>
+                  <span className="text-xs text-gray-600 dark:text-white/50">Server</span>
                 )}
               </div>
             )}
             {githubClientUrl && (
-              <div className="flex items-center gap-1">
+              <div className="flex flex-col items-center gap-1">
                 <a
                   href={githubClientUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-gray-700 hover:text-gray-950 dark:text-white/70 dark:hover:text-white transition"
+                  className="text-gray-700 hover:text-gray-950 dark:text-white/70 dark:hover:text-white transition-all hover:scale-110"
                   title="View Client GitHub Repository"
                 >
-                  <FaGithubSquare size={24} />
+                  <FaGithubSquare size={34} />
                 </a>
-                <span className="text-xs text-gray-600 dark:text-white/50 ml-1">Client</span>
+                <span className="text-xs text-gray-600 dark:text-white/50">Client</span>
               </div>
             )}
             {deploymentUrl && (
-              <div className="flex items-center gap-1">
+              <div className="flex flex-col items-center gap-1">
                 <a
                   href={deploymentUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-gray-700 hover:text-gray-950 dark:text-white/70 dark:hover:text-white transition"
+                  className="text-gray-700 hover:text-gray-950 dark:text-white/70 dark:hover:text-white transition-all hover:scale-110"
                   title="View Live Demo"
                 >
-                  <FaExternalLinkAlt size={20} />
+                  <FaExternalLinkAlt size={26} />
                 </a>
-                <span className="text-xs text-gray-600 dark:text-white/50 ml-1">Live Demo</span>
+                <span className="text-xs text-gray-600 dark:text-white/50">Live Demo</span>
               </div>
             )}
           </div>

@@ -7,7 +7,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { FaGithubSquare } from "react-icons/fa";
-import { HiDownload } from "react-icons/hi";
+import { IoEyeOutline } from "react-icons/io5";
 
 export default function Intro() {
   const { ref } = useSectionInView("Home");
@@ -95,7 +95,7 @@ export default function Intro() {
           className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none hoverButton transition cursor-pointer borderBlack dark:bg-white/10"
         >
           View CV
-          <HiDownload className=" opacity-60 group-hover:translate-y-1" />
+          <IoEyeOutline className=" opacity-60 group-hover:scale-110" />
         </a>
         <a
           className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full outline-none focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
