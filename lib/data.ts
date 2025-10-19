@@ -244,6 +244,7 @@ export const projectsData = [
     tags: ["Next.js", "Tailwind CSS", "Zustand", "AI Storytelling", "Game"],
     imageUrl: coLoreImg,
     githubUrl: "https://github.com/Avitoohband/colore-client",
+    deploymentUrl: "https://colore-game.vercel.app/",
   },
   {
     id: "p5",
