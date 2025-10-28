@@ -15,6 +15,7 @@ import javaImg from "@/public/java.png";
 import employeeMgntImg from "@/public/employee-mgnt.png";
 import mcpBookmarkImg from "@/public/mcp-bookmark.png";
 import triviaClientImg from "@/public/trivia-client.png";
+import youraoke from "@/public/youraoke.png";
 
 export const links = [
   {
@@ -211,6 +212,16 @@ export const experiencesData = [
 export const projectsData = [
   {
     id: "p1",
+    title: "Youraoke",
+    description:
+      "Youraoke 🎤 - A bilingual karaoke companion app. Manage your favorite singers & songs in English/Hebrew, auto-fetch images from Wikipedia, and search YouTube with one click. Built with Next.js 15 + Supabase. Try it live! 🎵",
+    tags: ["Next.js", "TypeScript", "Supabase", "RLS"],
+    imageUrl: youraoke,
+    githubUrl: "https://github.com/Avitoohband/youraoke",
+    deploymentUrl: "https://youraoke.vercel.app/",
+  },
+  {
+    id: "p2",
     title: "AI RAG Agent",
     description:
       "A Retrieval-Augmented Generation (RAG) application that answers questions about restaurant reviews using LangChain, Ollama, and ChromaDB.",
@@ -241,7 +252,7 @@ export const projectsData = [
     title: "CoLore",
     description:
       "A local-only, browser-based storytelling game built with Next.js, Tailwind CSS, and Zustand. Players take turns creating stories together with AI assistance.",
-    tags: ["Next.js", "Tailwind CSS", "Zustand", "AI Storytelling", "Game"],
+    tags: ["Next.js", "Tailwind CSS", "Zustand", "AI Storytelling", "Game", "Supabase"],
     imageUrl: coLoreImg,
     githubUrl: "https://github.com/Avitoohband/colore-client",
   },
